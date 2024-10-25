@@ -13,7 +13,7 @@ pipeline{
         stage("Delete Container "){
             steps{
                script{
-                    bat "docker rm -f docker-container || exit 0"
+                    bat "docker rm -f 2314 || exit 0"
                }
         
             }
@@ -21,7 +21,7 @@ pipeline{
         stage("Build and run Docker Container"){
             steps{
                script{
-                    bat "docker run -d --name docker-container markfds14/dockerfile"
+                    bat "docker run -d --name 2314 markfds14/dockerfile"
                }
         
             }
