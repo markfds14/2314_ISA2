@@ -5,7 +5,7 @@ pipeline{
         stage("Build Docker Image"){
             steps{
                script{
-                    bat "docker build -t markfds14/dockerfile ."
+                    bat "docker build -t markfds14/2314_ISA2 ."
                }
         
             }
@@ -21,7 +21,7 @@ pipeline{
         stage("Build and run Docker Container"){
             steps{
                script{
-                    bat "docker run -d --name 2314 markfds14/dockerfile"
+                    bat "docker run -d --name 2314 markfds14/2314_ISA2"
                }
         
             }
